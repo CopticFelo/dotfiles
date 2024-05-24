@@ -1,0 +1,13 @@
+.config/gh/
+.config/flutter/
+.config/htop/
+.config/.mono/
+.config/iterm2/
+.config/jgit/
+.config/neofetch/
+.config/raycast/
+.config/StardewValley/
+.config/taskell/
+.config/wireshark/
+.config/karabiner/automatic_backups/
+.DS_store
