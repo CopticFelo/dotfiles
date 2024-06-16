@@ -24,3 +24,6 @@ ctrl - k : yabai -m space --balance
 
 # Make fullscreen
 ctrl - f         : yabai -m window --toggle zoom-fullscreen
+
+# Rotate layout
+ctrl - l : yabai -m space --rotate 90

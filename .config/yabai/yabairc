@@ -29,7 +29,7 @@ yabai -m rule --add app="^Papers Please$" manage=off
 yabai -m rule --add app="^Whatsapp$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Messager$" manage=off
-yabai -m rule --add app="^WhatsApp" manage=off
+yabai -m rule --add app="^WhatsApp$" manage=off
 yabai -m rule --add app="^Zoom$" manage=off
 yabai -m rule --add app="^Microsoft Teams$" manage=off
 yabai -m rule --add app="^Slack$" manage=off

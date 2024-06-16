@@ -141,6 +141,7 @@ export PATH="/opt/homebrew/opt/openjdk:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/share/android-commandlinetools/emulator/:$PATH"
+export PATH="~/go/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.dotFiles/.p10k.zsh.
 [[ ! -f ~/.dotFiles/.p10k.zsh ]] || source ~/.dotFiles/.p10k.zsh
