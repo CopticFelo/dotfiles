@@ -4,4 +4,5 @@ require("felo.lazy")
 require("nvim-tree").setup()
 
 vim.cmd('autocmd CmdlineLeave * redrawstatus')
-vim.api.nvim_exec ('language en_US', true)
+-- vim.api.nvim_exec ('language en_US', true)
+vim.cmd([[language en_US.UTF-8]])
