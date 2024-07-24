@@ -11,19 +11,19 @@ ctrl + shift - down : yabai -m window --warp south
 ctrl + shift - up : yabai -m window --warp north
 
 # Resize windows
-ctrl - left : yabai -m window --resize left:-100:0 ; yabai -m window --resize right:-100:0
+ctrl - left : yabai -m window --resize left:-100:0 ; yabai -m window --resize l:-100:0
 ctrl - down : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
 ctrl - up : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
-ctrl - right : yabai -m window --resize right:100:0 ; yabai -m window --resize left:100:0
+ctrl - right : yabai -m window --resize right:100:0 ; yabai -m window --resize h:100:0
 
 # Float / Unfloat window
 ctrl - space : yabai -m window --toggle float
 
 # Balance the layout
-ctrl - k : yabai -m space --balance
+ctrl - up : yabai -m space --balance
 
 # Make fullscreen
 ctrl - f         : yabai -m window --toggle zoom-fullscreen
 
 # Rotate layout
-ctrl - l : yabai -m space --rotate 90
+ctrl + alt - o : yabai -m space --rotate 90

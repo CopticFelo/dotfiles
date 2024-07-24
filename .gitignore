@@ -10,4 +10,5 @@
 .config/taskell/
 .config/wireshark/
 .config/karabiner/automatic_backups/
+.config/nvim/lazy-lock.json
 .DS_store

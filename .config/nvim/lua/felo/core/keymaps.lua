@@ -45,4 +45,4 @@ vim.keymap.set("n", "<leader>]", ":CompetiTest run<CR>") -- Run testcases
 vim.keymap.set("n", "<leader>a", ":CompetiTest add_testcase<CR>") -- Add testcase
 vim.keymap.set("n", "<leader>m", ":CompetiTest edit_testcase<CR>") -- Edit testcase
 vim.keymap.set("n", "<leader>d", ":CompetiTest delete_testcase<CR>") -- Delete testcase
-vim.keymap.set("n", "<leader>g", ":CompetiTest recieve testcases<CR>") -- Get testcases from Codeforces
+vim.keymap.set("n", "<leader>g", ":CompetiTest receive testcases<CR>") -- Get testcases from Codeforces

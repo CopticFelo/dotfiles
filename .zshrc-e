@@ -148,5 +148,3 @@ export LC_CTYPE=en_US.UTF-8
 
 # To customize prompt, run `p10k configure` or edit ~/.dotFiles/.p10k.zsh.
 [[ ! -f ~/.dotFiles/.p10k.zsh ]] || source ~/.dotFiles/.p10k.zsh
-
-[ -f "/Users/felo/.ghcup/env" ] && . "/Users/felo/.ghcup/env" # ghcup-env

@@ -7,37 +7,39 @@ yabai -m config focus_follows_mouse on
 
 # Exclusions
 # Dev
-yabai -m rule --add app="^Simulator$" manage=off
+yabai -m rule --add app="Simulator$" manage=off
 
 # System
-yabai -m rule --add app="^Activity Monitor$" manage=off
-yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="Activity Monitor$" manage=off
+yabai -m rule --add app="System Settings$" manage=off
 
 # Games
-yabai -m rule --add app="^Roblox$" manage=off
-yabai -m rule --add app="^Tmodloader$" manage=off
-yabai -m rule --add app="^Java$" manage=off
-yabai -m rule --add app="^Hoi4$" manage=off
-yabai -m rule --add app="^Paradox Launcher$" manage=off
-yabai -m rule --add app="^TotallyAccurateBattleSimulator$" manage=off
-yabai -m rule --add app="^Stardew Valley$" manage=off
-yabai -m rule --add app="^OSU$" manage=off
-yabai -m rule --add app="^Dolphin$" manage=off
-yabai -m rule --add app="^Papers Please$" manage=off
+yabai -m rule --add app="Roblox$" manage=off
+yabai -m rule --add app="Tmodloader$" manage=off
+yabai -m rule --add app="Java$" manage=off
+yabai -m rule --add app="Hoi4$" manage=off
+yabai -m rule --add app="Paradox Launcher$" manage=off
+yabai -m rule --add app="TotallyAccurateBattleSimulator$" manage=off
+yabai -m rule --add app="Stardew Valley$" manage=off
+yabai -m rule --add app="OSU$" manage=off
+yabai -m rule --add app="Dolphin$" manage=off
+yabai -m rule --add app="Papers Please$" manage=off
+yabai -m rule --add app="(?i)^wine" manage=off
 
 # Social media
-yabai -m rule --add app="^Whatsapp$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
-yabai -m rule --add app="^Messager$" manage=off
-yabai -m rule --add app="^WhatsApp$" manage=off
-yabai -m rule --add app="^Zoom$" manage=off
-yabai -m rule --add app="^Microsoft Teams$" manage=off
-yabai -m rule --add app="^Slack$" manage=off
+yabai -m rule --add app="Whatsapp$" manage=off
+yabai -m rule --add app="Discord$" manage=off
+yabai -m rule --add app="Messager$" manage=off
+yabai -m rule --add app="WhatsApp$" manage=off
+yabai -m rule --add app="Zoom$" manage=off
+yabai -m rule --add app="Microsoft Teams$" manage=off
+yabai -m rule --add app="Slack$" manage=off
 
 # Other
-yabai -m rule --add app="^Arc$" manage=off
-yabai -m rule --add app="^Lulu$" manage=off
-yabai -m rule --add app="^Clock$" manage=off
+yabai -m rule --add app="Arc$" manage=off
+yabai -m rule --add app="Lulu$" manage=off
+yabai -m rule --add app="Clock$" manage=off
+yabai -m rule --add app="Lulu$" manage=off
 
 
 # Config
