@@ -7,6 +7,7 @@ return {
 	},
 	config = function()
 		local ts = require("telescope")
+		ts.load_extension("flutter")
 		local actions = require("telescope.actions")
 		ts.setup({
 			file_ignore_patterns = {

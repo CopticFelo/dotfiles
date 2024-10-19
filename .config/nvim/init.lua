@@ -11,3 +11,4 @@ vim.api.nvim_create_autocmd("TermOpen", {
 	group = "TerminalResize",
 	command = "resize 15",
 })
+vim.cmd("colorscheme midnight")

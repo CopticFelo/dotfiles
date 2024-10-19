@@ -37,7 +37,7 @@ return {
 				"vim",
 				"dockerfile",
 				"gitignore",
-				"r",
+				"rust",
 				"vimdoc",
 				"luadoc",
 			},

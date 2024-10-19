@@ -42,14 +42,15 @@ return {
 			},
 		}
 		dap.configurations.cpp = dap.configurations.c
+		dap.configurations.rust = dap.configurations.c
 
-		vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint)
-		vim.keymap.set("n", "<leader>D", dap.continue)
+		vim.keymap.set("n", "<leader>B", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
+		vim.keymap.set("n", "<leader>D", dap.continue, { desc = "Continue debugging" })
 		vim.keymap.set("n", "<leader>i", function()
 			require("dap").step_into()
-		end)
+		end, { desc = "Step into" })
 		vim.keymap.set("n", "<leader>o", function()
 			require("dap").step_over()
-		end)
+		end, { desc = "Step over" })
 	end,
 }
