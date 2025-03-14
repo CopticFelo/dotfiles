@@ -58,3 +58,8 @@ vim.keymap.set("n", "<leader>`", "<cmd>w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>~", "<cmd>wa<CR>", { desc = "Save all open buffers" })
 
 vim.keymap.set("n", "<leader>C", "<cmd>CompilerOpen<CR>", { desc = "Open Compiler menu" })
+
+vim.keymap.set("i", "<c-h>", "<left>", { desc = "Move left" })
+vim.keymap.set("i", "<c-l>", "<right>", { desc = "Move right" })
+vim.keymap.set("i", "<c-j>", "<down>", { desc = "Move down" })
+vim.keymap.set("i", "<c-k>", "<up>", { noremap = true, desc = "Move up" })
