@@ -27,3 +27,16 @@ ctrl - f : yabai -m window --toggle zoom-fullscreen
 
 # Rotate layout
 ctrl + alt - o : yabai -m space --rotate 90
+
+# Open finder
+ctrl - n : open ~/
+
+# Open Iterm2
+ctrl - y : open /Applications/Iterm.app 
+
+# Mouse focus
+ctrl - o         : yabai -m config focus_follows_mouse autofocus
+ctrl - p         : yabai -m config focus_follows_mouse off
+
+# Reload yabai
+ctrl + shift - r : yabai --restart-service
