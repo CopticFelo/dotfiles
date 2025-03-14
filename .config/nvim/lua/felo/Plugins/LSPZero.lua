@@ -15,9 +15,18 @@ return {
 	config = function()
 		local lsp_zero = require("lsp-zero")
 
-		lsp_zero.on_attach(function(client, bufnr)
+		local lsp_attach = function(client, bufnr)
+			-- see :help lsp-zero-keybindings
+			-- to learn the available actions
 			lsp_zero.default_keymaps({ buffer = bufnr })
-		end)
+		end
+
+		lsp_zero.extend_lspconfig({
+			capabilities = require("cmp_nvim_lsp").default_capabilities(),
+			lsp_attach = lsp_attach,
+			float_border = "rounded",
+			sign_text = true,
+		})
 		require("mason").setup({})
 		require("mason-lspconfig").setup({
 			ensure_installed = {
@@ -31,6 +40,7 @@ return {
 				"yamlls",
 				"omnisharp_mono",
 				"lua_ls",
+				"texlab",
 			},
 			handlers = {
 				function(server_name)
