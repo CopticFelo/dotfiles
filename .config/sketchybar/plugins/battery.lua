@@ -21,15 +21,15 @@ battery:subscribe("routine", function()
 			percentnum = tonumber(percent)
 			if percentnum >= 75 then
 				baticon = ""
-				color = colors.green
+				color = colors.white
 				isVisible = true
 			elseif percentnum >= 50 then
 				baticon = ""
-				color = colors.yellow
+				color = colors.white
 				isVisible = true
 			elseif percentnum >= 25 then
 				baticon = ""
-				color = colors.orange
+				color = colors.white
 				isVisible = true
 			elseif percentnum > 10 then
 				baticon = ""

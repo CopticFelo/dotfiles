@@ -17,7 +17,7 @@ local function update(res)
 			string = res == "" and "Nicht verbunden" or res,
 		},
 		icon = {
-			color = res == "" and colors.red or colors.green,
+			color = res == "" and colors.red or colors.white,
 		},
 	})
 end

@@ -25,7 +25,7 @@ music:subscribe("routine", function()
 			},
 			icon = {
 				string = isPlaying and "" or "",
-				color = isPaused and colors.red or colors.green,
+				color = isPaused and colors.red or colors.white,
 			},
 		})
 	end)

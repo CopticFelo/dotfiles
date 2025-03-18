@@ -1,8 +1,8 @@
 return {
 	black = 0xff181926,
-	white = 0xffffffff,
+	white = 0xffdbdbdb,
 	red = 0xffff1744,
-	green = 0xff00dfdc,
+	green = 0xff1fd41f,
 	blue = 0xff230cf3,
 	yellow = 0xffecf30c,
 	orange = 0xfff3b10c,
@@ -14,7 +14,7 @@ return {
 		-- bg = 0xB4051b34,
 		-- bg = 0x0fffffff,
 		-- bg = 0xff000000,
-		bg = 0xA00a192f,
+		bg = 0x7f000000,
 		border = 0xa6ffffff,
 	},
 }

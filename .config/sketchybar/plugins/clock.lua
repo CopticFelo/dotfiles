@@ -21,7 +21,7 @@ local function update()
 		end
 		local hour = tonumber(string.sub(result_fmt[4], 1, 2))
 		local ampm = result_fmt[5]
-		local color = colors.green
+		local color = colors.white
 		if (hour < 5 or hour == 12) and (ampm == "AM") then
 			color = colors.red
 		end
