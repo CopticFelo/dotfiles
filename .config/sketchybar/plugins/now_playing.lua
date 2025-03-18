@@ -5,6 +5,8 @@ local music = sbar.add("item", {
 	scroll_texts = true,
 })
 
+local isPaused = false
+
 music:subscribe("routine", function()
 	sbar.exec("nowplaying-cli get title playbackRate", function(result)
 		local result_fmt = {}
@@ -12,7 +14,6 @@ music:subscribe("routine", function()
 			table.insert(result_fmt, s)
 		end
 		local isPlaying = (string.sub(result_fmt[1], 1, 4) ~= "null")
-		local isPaused = (tonumber(result_fmt[2]) == 0)
 		isPaused = (tonumber(result_fmt[2]) == 0)
 		if string.len(result_fmt[1]) > 30 then
 			result_fmt[1] = string.sub(result_fmt[1], 1, 30) .. ".."
@@ -29,22 +30,43 @@ music:subscribe("routine", function()
 	end)
 end)
 
+music:subscribe("mouse.entered", function()
+	music:set({
+		background = {
+			drawing = "on",
+			color = colors.white,
+		},
+		label = {
+			color = colors.black,
+		},
+		icon = {
+			color = colors.black,
+		},
+	})
+end)
+
+music:subscribe("mouse.exited", function()
+	music:set({
+		background = {
+			drawing = "off",
+		},
+		label = {
+			color = colors.white,
+		},
+		icon = {
+			color = isPaused and colors.red or colors.white,
+		},
+	})
+end)
+
 music:subscribe("mouse.clicked", function()
 	sbar.exec("nowplaying-cli get playbackRate", function(result)
-		local isPaused = (tonumber(result) == 0)
+		local currentColor = music:query().icon.color
 		if isPaused then
-			music:set({
-				icon = {
-					color = colors.green,
-				},
-			})
+			isPaused = false
 			sbar.exec("nowplaying-cli play", function() end)
 		else
-			music:set({
-				icon = {
-					color = colors.red,
-				},
-			})
+			isPaused = true
 			sbar.exec("nowplaying-cli pause", function() end)
 		end
 	end)
