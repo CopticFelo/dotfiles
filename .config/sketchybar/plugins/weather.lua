@@ -107,20 +107,8 @@ local weather_icons_night = {
 }
 
 local weather = sbar.add("item", "widgets.weather", {
-	position = "right",
-	icon = {
-		font = { family = settings.font, style = "Bold", size = 15 },
-		color = colors.green,
-		y_offset = 1,
-	},
+	position = "left",
 	update_freq = 3600,
-	label = {
-		font = {
-			style = settings.font,
-			size = 14.0,
-		},
-		align = "right",
-	},
 })
 
 local function get_icon(condition, is_day)
