@@ -3,9 +3,6 @@ local music = sbar.add("item", {
 	position = "left",
 	update_freq = 3,
 	scroll_texts = true,
-	label = {
-		max_chars = 30,
-	},
 })
 
 music:subscribe("routine", function()
@@ -16,9 +13,10 @@ music:subscribe("routine", function()
 		end
 		local isPlaying = (string.sub(result_fmt[1], 1, 4) ~= "null")
 		local isPaused = (tonumber(result_fmt[2]) == 0)
-		-- if (len(result) > 20) then
-		--
-		-- end
+		isPaused = (tonumber(result_fmt[2]) == 0)
+		if string.len(result_fmt[1]) > 30 then
+			result_fmt[1] = string.sub(result_fmt[1], 1, 30) .. ".."
+		end
 		music:set({
 			label = {
 				string = isPlaying and result_fmt[1] or "",
