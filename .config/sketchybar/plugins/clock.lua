@@ -14,7 +14,7 @@ local clock = sbar.add("item", {
 })
 
 local function update()
-	sbar.exec("date '+%a %b %d %I:%M %p'", function(result, exit)
+	sbar.exec("date '+%a %b %d  %I:%M %p'", function(result, exit)
 		local result_fmt = {}
 		for t in result:gmatch("%S+") do
 			table.insert(result_fmt, t)
