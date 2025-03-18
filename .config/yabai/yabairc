@@ -67,5 +67,5 @@ yabai -m signal --add event=window_focused action="sketchybar --trigger window_f
 yabai -m signal --add event=window_title_changed action="sketchybar --trigger title_change &> /dev/null"
 
 osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
-borders active_color="gradient(top_right=0xff00dfdc,bottom_left=0xff0038df)" inactive_color=0xff7e7e84 width=2.0 order=above &
+borders active_color="gradient(top_right=0xfffe3c3c,bottom_left=0xffad2323)" inactive_color=0xff7e7e84 width=2.0 order=above &
 echo "yabai configuration loaded.."
