@@ -146,7 +146,7 @@ export PATH="~/go/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export HOMEBREW_NO_AUTO_UPDATE=1
-echo "\033[0;32mSystem ready \033[0m"
+echo "\033[0;32mWillkommen an Bord Kaptäin, Alle Systeme in Betrieb \033[0m"
 
 # To customize prompt, run `p10k configure` or edit ~/.dotFiles/.p10k.zsh.
 [[ ! -f ~/.dotFiles/.p10k.zsh ]] || source ~/.dotFiles/.p10k.zsh
