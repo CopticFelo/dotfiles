@@ -119,11 +119,10 @@ local function get_icon(condition, is_day)
 	end
 end
 
-weather:subscribe({ "forced", "routine", "system_woke", "wifi_change" }, function(env)
+weather:subscribe({ "forced", "routine", "system_woke", "wifi_change", "mouse.clicked" }, function(env)
 	local url = string.format("curl -s 'http://api.weatherapi.com/v1/current.json?key=%s&q=auto:ip'", api)
 	sbar.exec(url, function(data)
 		local icon = get_icon(data.current.condition.code, data.current.is_day)
-
 		weather:set({
 			icon = {
 				string = icon,
@@ -133,4 +132,33 @@ weather:subscribe({ "forced", "routine", "system_woke", "wifi_change" }, functio
 			},
 		})
 	end)
+end)
+
+weather:subscribe("mouse.entered", function()
+	weather:set({
+		background = {
+			drawing = "on",
+			color = colors.white,
+		},
+		label = {
+			color = colors.black,
+		},
+		icon = {
+			color = colors.black,
+		},
+	})
+end)
+
+weather:subscribe("mouse.exited", function()
+	weather:set({
+		background = {
+			drawing = "off",
+		},
+		label = {
+			color = colors.white,
+		},
+		icon = {
+			color = colors.white,
+		},
+	})
 end)
