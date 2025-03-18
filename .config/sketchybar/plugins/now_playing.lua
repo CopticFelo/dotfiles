@@ -1,6 +1,6 @@
 local colors = require("colors")
 local music = sbar.add("item", {
-	position = "center",
+	position = "left",
 	update_freq = 3,
 	scroll_texts = true,
 	label = {
