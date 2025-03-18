@@ -10,8 +10,8 @@ local cpu_util = sbar.add("item", {
 })
 
 cpu_util:subscribe("routine", function()
-	sbar.exec([[top -l  2 | grep -E "^CPU" | tail -1 | awk '{ print $3 + $5"%" }']], function(result)
-		result = string.sub(result, 1, 2) .. "%"
+	sbar.exec([[top -l  2 | grep -E "^CPU" | tail -1 | awk '{ print $3 + $5 }']], function(result)
+		result = string.format("%d", math.floor(tonumber(result))) .. "%"
 		cpu_util:set({
 			label = {
 				string = result,
