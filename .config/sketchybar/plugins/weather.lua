@@ -1,8 +1,11 @@
 local colors = require("colors")
 local settings = require("settings")
 
-local api = "c7fda19e54c74fdda73183519251601"
+local api = ""
 local city = "New Cairo"
+sbar.exec("scripts/get_weather_key.sh", function(result)
+	api = result
+end)
 
 local weather_icons_day = {
 	[1000] = "", -- Sunny/113
