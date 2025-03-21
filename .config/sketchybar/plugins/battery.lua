@@ -42,7 +42,7 @@ battery:subscribe("routine", function()
 			end
 			if status ~= "" then
 				baticon = "󱐋"
-				color = colors.green
+				color = colors.white
 				isVisible = true
 			end
 			battery:set({
