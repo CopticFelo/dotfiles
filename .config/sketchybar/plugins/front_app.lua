@@ -11,12 +11,16 @@ local front_app = sbar.add("item", "front_app", {
 })
 
 front_app:subscribe("front_app_switched", function(env)
+	local app_icon = icon_map[env.INFO]
+	if app_icon == nil then
+		app_icon = icon_map["Default"]
+	end
 	front_app:set({
 		label = {
 			string = env.INFO,
 		},
 		icon = {
-			string = icon_map[env.INFO],
+			string = app_icon,
 		},
 	})
 end)
