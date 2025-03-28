@@ -29,10 +29,10 @@ ctrl - f : yabai -m window --toggle zoom-fullscreen
 ctrl + alt - o : yabai -m space --rotate 90
 
 # Open finder
-ctrl - n : open ~/
+alt - return : osascript -e 'tell application "Finder" to activate' -e 'tell application "System Events" to keystroke "n" using command down'
 
 # Open Iterm2
-ctrl - y : open /Applications/Iterm.app 
+alt - y : osascript -e 'tell application "Iterm2" to activate' -e 'tell application "System Events" to keystroke "n" using command down'
 
 # Mouse focus
 ctrl - o         : yabai -m config focus_follows_mouse autofocus
