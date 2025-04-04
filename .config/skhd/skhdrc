@@ -40,3 +40,6 @@ alt - return : osascript -e 'tell application "Finder" to activate' -e 'tell app
 
 # Open Iterm2
 alt - y : osascript -e 'tell application "Iterm2" to activate' -e 'tell application "System Events" to keystroke "n" using command down'
+
+# Connect to Earphones ("soundcore R50i")
+ctrl + alt - b : osascript ~/.config/skhd/Bluetooth.scpt
