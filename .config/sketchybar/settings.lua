@@ -1,4 +1,4 @@
 return {
-	font = "Hack Nerd Font",
+	font = "JetbrainsMono Nerd Font",
 	paddings = 6,
 }
