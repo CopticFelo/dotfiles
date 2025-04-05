@@ -1,8 +1,8 @@
-local colors = require("colors")
+local settings = require("settings")
 local apple = sbar.add("item", {
 	icon = {
 		string = "",
-		color = colors.white,
+		color = settings.default_colors.icons.idle,
 		font = {
 			size = 20,
 		},

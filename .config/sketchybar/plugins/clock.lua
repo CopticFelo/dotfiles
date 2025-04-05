@@ -1,11 +1,8 @@
-local colors = require("colors")
-package.cpath = package.cpath .. ";/Users/" .. os.getenv("USER") .. "/.local/share/sketchybar_lua/?.so"
-local sbar = require("sketchybar")
+local settings = require("settings")
 local clock = sbar.add("item", {
 	position = "right",
 	icon = {
 		string = "",
-		color = colors.green,
 	},
 	update_freq = 1,
 	label = {
@@ -21,9 +18,9 @@ local function update()
 		end
 		local hour = tonumber(string.sub(result_fmt[4], 1, 2))
 		local ampm = result_fmt[5]
-		local color = colors.white
+		local color = settings.default_colors.icons.idle
 		if (hour < 5 or hour == 12) and (ampm == "AM") then
-			color = colors.red
+			color = settings.default_colors.icons.critical
 		end
 		clock:set({
 			label = {

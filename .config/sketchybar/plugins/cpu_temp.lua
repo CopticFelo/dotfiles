@@ -1,5 +1,4 @@
-local colors = require("colors")
-local isVisible = false
+local settings = require("settings")
 local cpu_temp = sbar.add("item", {
 	position = "right",
 	icon = {
@@ -12,19 +11,21 @@ local cpu_temp = sbar.add("item", {
 })
 
 cpu_temp:subscribe("routine", function()
-	local color = colors.green
+	local color = settings.default_colors.icons.idle
 	sbar.exec("/usr/local/bin/smctemp -c", function(percent)
 		local tempicon = "󰦖"
+		-- percent? i am sorry, what?
+		-- TODO: change that variable name
 		local percentnum = tonumber(percent)
 		if percentnum >= 85 then
 			tempicon = ""
-			color = colors.red
+			color = settings.default_colors.icons.critical
 		elseif percentnum >= 50 then
 			tempicon = ""
-			color = colors.orange
+			color = settings.default_colors.icons.warn
 		else
 			tempicon = ""
-			color = colors.white
+			color = settings.default_colors.icons.idle
 		end
 		cpu_temp:set({
 			icon = {
@@ -33,7 +34,7 @@ cpu_temp:subscribe("routine", function()
 			},
 			label = {
 				string = string.sub(percent, 1, 2) .. "°c",
-				color = percentnum > 90 and color or colors.white,
+				color = percentnum > 90 and settings.default_colors.text.critical or settings.default_colors.text.idle,
 			},
 		})
 	end)

@@ -1,4 +1,4 @@
-local colors = require("colors")
+local settings = require("settings")
 local wifi = sbar.add("item", {
 	position = "right",
 	label = {
@@ -6,7 +6,7 @@ local wifi = sbar.add("item", {
 	},
 	icon = {
 		string = "󰖩",
-		color = colors.red,
+		color = settings.default_colors.icons.critical,
 	},
 	update_freq = 2,
 })
@@ -17,7 +17,7 @@ local function update(res)
 			string = res == "" and "Nicht verbunden" or res,
 		},
 		icon = {
-			color = res == "" and colors.red or colors.white,
+			color = res == "" and settings.default_colors.icons.critical or settings.default_colors.icons.idle,
 		},
 	})
 end
@@ -35,13 +35,13 @@ wifi:subscribe("mouse.entered", function()
 	wifi:set({
 		background = {
 			drawing = "on",
-			color = colors.white,
+			color = settings.default_colors.hover,
 		},
 		label = {
-			color = colors.black,
+			color = settings.default_colors.text.hover,
 		},
 		icon = {
-			color = colors.black,
+			color = settings.default_colors.icons.hover,
 		},
 	})
 end)
@@ -52,10 +52,10 @@ wifi:subscribe("mouse.exited", function()
 			drawing = "off",
 		},
 		label = {
-			color = colors.white,
+			color = settings.default_colors.text.idle,
 		},
 		icon = {
-			color = colors.white,
+			color = settings.default_colors.icons.idle,
 		},
 	})
 end)

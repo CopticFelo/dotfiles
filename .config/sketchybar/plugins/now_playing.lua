@@ -1,4 +1,4 @@
-local colors = require("colors")
+local settings = require("settings")
 local music = sbar.add("item", {
 	position = "left",
 	update_freq = 3,
@@ -24,7 +24,7 @@ music:subscribe("routine", function()
 			},
 			icon = {
 				string = isPlaying and "" or "",
-				color = isPaused and colors.red or colors.white,
+				color = isPaused and settings.default_colors.icons.critical or settings.default_colors.icons.idle,
 			},
 		})
 	end)
@@ -34,13 +34,13 @@ music:subscribe("mouse.entered", function()
 	music:set({
 		background = {
 			drawing = "on",
-			color = colors.white,
+			color = settings.default_colors.hover,
 		},
 		label = {
-			color = colors.black,
+			color = settings.default_colors.text.hover,
 		},
 		icon = {
-			color = colors.black,
+			color = settings.default_colors.icons.hover,
 		},
 	})
 end)
@@ -51,10 +51,10 @@ music:subscribe("mouse.exited", function()
 			drawing = "off",
 		},
 		label = {
-			color = colors.white,
+			color = settings.default_colors.text.idle,
 		},
 		icon = {
-			color = isPaused and colors.red or colors.white,
+			color = isPaused and settings.default_colors.icons.critical or settings.default_colors.icons.idle,
 		},
 	})
 end)

@@ -1,4 +1,4 @@
-local colors = require("colors")
+local settings = require("settings")
 local isVisible = false
 local battery = sbar.add("item", {
 	position = "right",
@@ -14,35 +14,35 @@ local battery = sbar.add("item", {
 
 battery:subscribe("routine", function()
 	local baticon = ""
-	local color = colors.white
+	local color = settings.default_colors.icons.idle
 	local percentnum = nil
 	sbar.exec([[pmset -g batt | grep -Eo "\d+%" | cut -d% -f1]], function(percent)
 		sbar.exec([[pmset -g batt | grep 'AC Power']], function(status)
 			percentnum = tonumber(percent)
 			if percentnum >= 75 then
 				baticon = ""
-				color = colors.white
+				color = settings.default_colors.icons.idle
 				isVisible = true
 			elseif percentnum >= 50 then
 				baticon = ""
-				color = colors.white
+				color = settings.default_colors.icons.idle
 				isVisible = true
-			elseif percentnum >= 25 then
+			elseif percentnum >= 20 then
 				baticon = ""
-				color = colors.white
+				color = settings.default_colors.icons.idle
 				isVisible = true
 			elseif percentnum > 10 then
 				baticon = ""
-				color = colors.red
+				color = settings.default_colors.icons.critical
 				isVisible = true
 			else
 				baticon = ""
-				color = colors.red
+				color = settings.default_colors.icons.critical
 				isVisible = not isVisible
 			end
 			if status ~= "" then
 				baticon = "󱐋"
-				color = colors.white
+				color = settings.default_colors.icons.idle
 				isVisible = true
 			end
 			battery:set({
@@ -52,7 +52,8 @@ battery:subscribe("routine", function()
 				},
 				label = {
 					string = tostring(percentnum) .. "%",
-					color = (percentnum <= 10) and color or colors.white,
+					color = (percentnum <= 10) and settings.default_colors.text.critical
+						or settings.default_colors.text.idle,
 				},
 			})
 		end)

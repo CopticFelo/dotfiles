@@ -1,4 +1,3 @@
-local colors = require("colors")
 local settings = require("settings")
 
 local api = ""
@@ -141,13 +140,13 @@ weather:subscribe("mouse.entered", function()
 	weather:set({
 		background = {
 			drawing = "on",
-			color = colors.white,
+			color = settings.default_colors.hover,
 		},
 		label = {
-			color = colors.black,
+			color = settings.default_colors.text.hover,
 		},
 		icon = {
-			color = colors.black,
+			color = settings.default_colors.icons.hover,
 		},
 	})
 end)
@@ -158,10 +157,10 @@ weather:subscribe("mouse.exited", function()
 			drawing = "off",
 		},
 		label = {
-			color = colors.white,
+			color = settings.default_colors.text.idle,
 		},
 		icon = {
-			color = colors.white,
+			color = settings.default_colors.icons.idle,
 		},
 	})
 end)
