@@ -11,12 +11,12 @@ local clock = sbar.add("item", {
 })
 
 local function update()
-	sbar.exec("date '+%a %b %d  %I:%M %p'", function(result, exit)
+	sbar.exec("date '+%a %b %d  %-I:%M %p'", function(result, exit)
 		local result_fmt = {}
 		for t in result:gmatch("%S+") do
 			table.insert(result_fmt, t)
 		end
-		local hour = tonumber(string.sub(result_fmt[4], 1, 2))
+		local hour = tonumber(string.sub(result_fmt[4], 1, 1))
 		local ampm = result_fmt[5]
 		local color = settings.default_colors.icons.idle
 		if (hour < 5 or hour == 12) and (ampm == "AM") then
