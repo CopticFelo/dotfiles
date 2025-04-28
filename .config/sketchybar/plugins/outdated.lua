@@ -1,4 +1,4 @@
-local colors = require("colors")
+local settings = require("settings")
 
 local outdated = sbar.add("item", {
 	drawing = false,
@@ -57,7 +57,13 @@ outdated:subscribe("mouse.entered", function()
 	outdated:set({
 		background = {
 			drawing = "on",
-			color = colors.red,
+			color = settings.default_colors.hover,
+		},
+		label = {
+			color = settings.default_colors.text.hover,
+		},
+		icon = {
+			color = settings.default_colors.icons.hover,
 		},
 	})
 end)
@@ -66,6 +72,12 @@ outdated:subscribe("mouse.exited", function()
 	outdated:set({
 		background = {
 			drawing = "off",
+		},
+		label = {
+			color = settings.default_colors.text.idle,
+		},
+		icon = {
+			color = settings.default_colors.icons.idle,
 		},
 	})
 end)
