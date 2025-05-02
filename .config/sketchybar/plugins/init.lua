@@ -3,6 +3,7 @@ require("plugins.apple")
 require("plugins.app_spaces")
 require("plugins.weather")
 require("plugins.now_playing")
+require("plugins.disk_capacity")
 
 -- Right side
 require("plugins.clock")
