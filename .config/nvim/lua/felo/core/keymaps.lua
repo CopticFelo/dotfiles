@@ -76,3 +76,11 @@ vim.keymap.set("n", "<leader>o", "<Cmd>DapStepOver<CR>", { desc = "Step over" })
 vim.keymap.set("n", "<leader>So", "<Cmd>DapStepOut<CR>", { desc = "Step out" })
 vim.keymap.set("n", "<leader>W", "<Cmd>DapContinue<CR>", { desc = "Weiter" })
 vim.keymap.set("n", "<leader>T", "<Cmd>DapTerminate<CR>", { desc = "Stop debugging" })
+
+local function change_root_to_global_cwd()
+  local api = require("nvim-tree.api")
+  local global_cwd = vim.fn.getcwd(-1, -1)
+  api.tree.change_root(global_cwd)
+end
+vim.keymap.set("n", "<leader>O", "<cmd>Telescope workspaces<CR>", { desc = "Change root to cwd" })
+vim.keymap.set("n", "<leader>/", change_root_to_global_cwd, { desc = "Change root to cwd" })
