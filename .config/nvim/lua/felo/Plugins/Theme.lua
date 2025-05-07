@@ -1,4 +1,4 @@
 return {
-	"dasupradyumna/midnight.nvim",
+	"nyoom-engineering/oxocarbon.nvim",
 	lazy = false,
 }
