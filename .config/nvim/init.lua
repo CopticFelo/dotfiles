@@ -13,6 +13,14 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 
 vim.cmd("colorscheme oxocarbon")
+vim.o.guifont = "JetbrainsMono Nerd Font:h17"
+vim.g.neovide_opacity = 0.6
+vim.g.neovide_normal_opacity = 0.6
+vim.g.neovide_show_border = true
+vim.g.neovide_window_blurred = true
+vim.g.neovide_show_border = false
+vim.g.neovide_cursor_trail_size = 0.0
+vim.o.winborder = "single"
 
 vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd", "asm_lsp", "basedpyright" })
 vim.diagnostic.config({

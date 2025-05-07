@@ -84,3 +84,12 @@ local function change_root_to_global_cwd()
 end
 vim.keymap.set("n", "<leader>O", "<cmd>Telescope workspaces<CR>", { desc = "Change root to cwd" })
 vim.keymap.set("n", "<leader>/", change_root_to_global_cwd, { desc = "Change root to cwd" })
+
+if vim.g.neovide then
+  vim.keymap.set('n', '<D-s>', ':w<CR>')  -- Save
+  vim.keymap.set('v', '<D-c>', 'y')       -- Copy
+  vim.keymap.set('n', '<D-v>', 'p')       -- Paste normal mode
+  vim.keymap.set('v', '<D-v>', 'p')       -- Paste visual mode
+  vim.keymap.set('c', '<D-v>', '<C-R>+')  -- Paste command mode
+  vim.keymap.set('i', '<D-v>', '<ESC>pi') -- Paste insert mode
+end
