@@ -5,10 +5,10 @@ return {
 	default_colors = {
 		hover = colors.white,
 		icons = {
-			idle = colors.white,
-			warn = colors.orange,
+			idle = colors.blue,
+			warn = colors.blue,
 			critical = colors.red,
-			selected = colors.red,
+			selected = colors.blue,
 			hover = colors.black,
 		},
 		text = {
