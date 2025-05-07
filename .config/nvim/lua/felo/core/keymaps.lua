@@ -68,3 +68,11 @@ vim.keymap.set("i", "<c-k>", "<up>", { noremap = true, desc = "Move up" })
 vim.keymap.set("n", "<leader>A", "<Cmd>lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
 vim.keymap.set("n", "<leader>R", "<Cmd>lua vim.lsp.buf.rename()<CR>", { desc = "Rename Symbol" })
 vim.keymap.set("n", "<leader>D", "<Cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Jump to definition" })
+
+-- DAP
+vim.keymap.set("n", "<leader>B", "<Cmd>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
+vim.keymap.set("n", "<leader>i", "<Cmd>DapStepInto<CR>", { desc = "Step into" })
+vim.keymap.set("n", "<leader>o", "<Cmd>DapStepOver<CR>", { desc = "Step over" })
+vim.keymap.set("n", "<leader>So", "<Cmd>DapStepOut<CR>", { desc = "Step out" })
+vim.keymap.set("n", "<leader>W", "<Cmd>DapContinue<CR>", { desc = "Weiter" })
+vim.keymap.set("n", "<leader>T", "<Cmd>DapTerminate<CR>", { desc = "Stop debugging" })
