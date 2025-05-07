@@ -1,54 +1,54 @@
 vim.g.mapleader = ";"
 
-vim.keymap.set("n", "<leader>j", ":m .+1<CR>==", { desc = "move line up(n)" }) --
-vim.keymap.set("n", "<leader>k", ":m .-2<CR>==", { desc = "move line down(n)" }) --
-vim.keymap.set("v", "<leader>j", ":m '>+1<CR>gv=gv", { desc = "move line up(v)" }) --
-vim.keymap.set("v", "<leader>k", ":m '<-2<CR>gv=gv", { desc = "move line down(v)" }) --
+vim.keymap.set("n", "<leader>j", ":m .+1<CR>==", { desc = "move line up(n)" })
+vim.keymap.set("n", "<leader>k", ":m .-2<CR>==", { desc = "move line down(n)" })
+vim.keymap.set("v", "<leader>j", ":m '>+1<CR>gv=gv", { desc = "move line up(v)" })
+vim.keymap.set("v", "<leader>k", ":m '<-2<CR>gv=gv", { desc = "move line down(v)" })
 
-vim.keymap.set("n", "<leader>w", "yyP", { desc = "duplicate line up (n)" }) -- duplicate line up(n)
-vim.keymap.set("n", "<leader>s", "yyp", { desc = "duplicate line down (n)" }) -- duplicate line down(n)
-vim.keymap.set("v", "<leader>w", "y'>pgv", { desc = "duplicate line up (v)" }) -- duplicate line up(v)
-vim.keymap.set("v", "<leader>s", "yPgv", { desc = "duplicate line down (v)" }) -- duplicate line down(v)
+vim.keymap.set("n", "<leader>w", "yyP", { desc = "duplicate line up (n)" })
+vim.keymap.set("n", "<leader>s", "yyp", { desc = "duplicate line down (n)" })
+vim.keymap.set("v", "<leader>w", "y'>pgv", { desc = "duplicate line up (v)" })
+vim.keymap.set("v", "<leader>s", "yPgv", { desc = "duplicate line down (v)" })
 
-vim.keymap.set("n", "<leader>n", ":nohl<CR>", { desc = "clear search highlights" }) -- clear search highlights
+vim.keymap.set("n", "<leader>n", ":nohl<CR>", { desc = "clear search highlights" })
 
-vim.keymap.set("n", "<leader>c", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree" }) -- Toggle Nvim Tree
-vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Focus Nvim Tree" }) -- Focus Nvim Tree
-vim.keymap.set("n", "<leader>r", ":NvimTreeRefresh<CR>", { desc = "Refresh Nvim Tree" }) -- Refresh Nvim Tree
+vim.keymap.set("n", "<leader>c", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree" })
+vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Focus Nvim Tree" })
+vim.keymap.set("n", "<leader>r", ":NvimTreeRefresh<CR>", { desc = "Refresh Nvim Tree" })
 
-vim.keymap.set("n", "<leader>t", "<cmd>tabnew<CR>", { desc = "New tab" }) -- New tab
-vim.keymap.set("n", "<leader>q", "<cmd>tabclose<CR>", { desc = "Close tab" }) -- Close tab
-vim.keymap.set("n", "<leader>,", "<cmd>bprev<CR>", { desc = "Prev buffer" }) -- Prev buffer
-vim.keymap.set("n", "<leader>.", "<cmd>bnext<CR>", { desc = "Next buffer" }) -- Next buffer
+vim.keymap.set("n", "<leader>t", "<cmd>tabnew<CR>", { desc = "New tab" })
+vim.keymap.set("n", "<leader>q", "<cmd>tabclose<CR>", { desc = "Close tab" })
+vim.keymap.set("n", "<leader>,", "<cmd>bprev<CR>", { desc = "Prev buffer" })
+vim.keymap.set("n", "<leader>.", "<cmd>bnext<CR>", { desc = "Next buffer" })
 
-vim.keymap.set("n", "<leader><leader>", "db", { desc = "Delete word" }) -- Delete word
+vim.keymap.set("n", "<leader><leader>", "db", { desc = "Delete word" })
 
-vim.keymap.set("n", "<leader>f", ":Telescope find_files<CR>", { desc = "Find" }) -- Find
-vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" }) -- Find buffers
+vim.keymap.set("n", "<leader>f", ":Telescope find_files<CR>", { desc = "Find" })
+vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" })
 
-vim.keymap.set("n", "<leader>v", "<C-w>v", { desc = "Split" }) -- Split
-vim.keymap.set("n", "<leader>h", "<C-w>s", { desc = "Split horizontally" }) -- Split horizontally
-vim.keymap.set("n", "<leader>x", ":close<CR>", { desc = "Close split" }) -- Close split
-vim.keymap.set("n", "<leader>X", ":bd<CR>", { desc = "Close buffer" }) -- Close buffer
+vim.keymap.set("n", "<leader>v", "<C-w>v", { desc = "Split" })
+vim.keymap.set("n", "<leader>h", "<C-w>s", { desc = "Split horizontally" })
+vim.keymap.set("n", "<leader>x", ":close<CR>", { desc = "Close split" })
+vim.keymap.set("n", "<leader>X", ":bd<CR>", { desc = "Close buffer" })
 
-vim.keymap.set("n", "<TAB>j", "<C-W><C-J>", { desc = "Nav to Bottom split (n)" }) -- Nav to Bottom split (n)
-vim.keymap.set("n", "<TAB>k", "<C-W><C-K>", { desc = "Nav to Upper split (n)" }) -- Nav to Upper split (n)
-vim.keymap.set("n", "<TAB>l", "<C-W><C-L>", { desc = "Nav to Right split (n)" }) -- Nav to Right split (n)
-vim.keymap.set("n", "<TAB>h", "<C-W><C-H>", { desc = "Nav to Left split (n)" }) -- Nav to Left split (n)
+vim.keymap.set("n", "<TAB>j", "<C-W><C-J>", { desc = "Nav to Bottom split (n)" })
+vim.keymap.set("n", "<TAB>k", "<C-W><C-K>", { desc = "Nav to Upper split (n)" })
+vim.keymap.set("n", "<TAB>l", "<C-W><C-L>", { desc = "Nav to Right split (n)" })
+vim.keymap.set("n", "<TAB>h", "<C-W><C-H>", { desc = "Nav to Left split (n)" })
 
-vim.keymap.set("n", "<leader>z", "<C-w>s<cmd>TmuxNavigateDown<CR><cmd>terminal<CR>i", { desc = "Open terminal" }) -- Open terminal
+vim.keymap.set("n", "<leader>z", "<C-w>s<cmd>TmuxNavigateDown<CR><cmd>terminal<CR>i", { desc = "Open terminal" })
 
-vim.keymap.set("n", "<leader>]", ":CompetiTest run<CR>", { desc = "Run testcases" }) -- Run testcases
-vim.keymap.set("n", "<leader>a", ":CompetiTest add_testcase<CR>", { desc = "Add testcase" }) -- Add testcase
-vim.keymap.set("n", "<leader>m", ":CompetiTest edit_testcase<CR>", { desc = "Edit testcase" }) -- Edit testcase
-vim.keymap.set("n", "<leader>d", ":CompetiTest delete_testcase<CR>", { desc = "Delete testcase" }) -- Delete testcase
-vim.keymap.set("n", "<leader>g", ":CompetiTest receive testcases<CR>", { desc = "Get testcases" }) -- Get testcases from Codeforces
+vim.keymap.set("n", "<leader>]", ":CompetiTest run<CR>", { desc = "Run testcases" })
+vim.keymap.set("n", "<leader>a", ":CompetiTest add_testcase<CR>", { desc = "Add testcase" })
+vim.keymap.set("n", "<leader>m", ":CompetiTest edit_testcase<CR>", { desc = "Edit testcase" })
+vim.keymap.set("n", "<leader>d", ":CompetiTest delete_testcase<CR>", { desc = "Delete testcase" })
+vim.keymap.set("n", "<leader>g", ":CompetiTest receive testcases<CR>", { desc = "Get testcases" })
 
-vim.keymap.set("n", "<leader>Fd", "<cmd>FlutterRun<CR>", { desc = "Flutter Run (Debug)" }) -- Flutter Run (Debug)
-vim.keymap.set("n", "<leader>Fq", "<cmd>FlutterQuit<CR>", { desc = "Flutter Quit" }) -- Flutter Quit
-vim.keymap.set("n", "<leader>Fr", "<cmd>FlutterReload<CR>", { desc = "Flutter Reload (Hot restart)" }) -- Flutter Reload (Hot restart)
-vim.keymap.set("n", "<leader>FR", "<cmd>FlutterRestart<CR>", { desc = "Flutter Restart" }) -- Flutter Restart
-vim.keymap.set("n", "<leader>Ft", "<cmd>Telescope flutter commands<CR>", { desc = "Flutter commands" }) -- Flutter commands
+vim.keymap.set("n", "<leader>Fd", "<cmd>FlutterRun<CR>", { desc = "Flutter Run (Debug)" })
+vim.keymap.set("n", "<leader>Fq", "<cmd>FlutterQuit<CR>", { desc = "Flutter Quit" })
+vim.keymap.set("n", "<leader>Fr", "<cmd>FlutterReload<CR>", { desc = "Flutter Reload (Hot restart)" })
+vim.keymap.set("n", "<leader>FR", "<cmd>FlutterRestart<CR>", { desc = "Flutter Restart" })
+vim.keymap.set("n", "<leader>Ft", "<cmd>Telescope flutter commands<CR>", { desc = "Flutter commands" })
 
 vim.keymap.set("n", "<TAB>r", ":resize ", { desc = "Resize window command" })
 
