@@ -13,3 +13,10 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 
 vim.cmd("colorscheme oxocarbon")
+
+vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd", "asm_lsp", "basedpyright" })
+vim.diagnostic.config({
+  virtual_lines = {
+    current_line = true,
+  },
+})
