@@ -13,11 +13,12 @@ yabai -m config focus_follows_mouse on
 # done < "$input"
 
 # Dev
-yabai -m rule --add app="Simulator$" manage=off
+# yabai -m rule --add app="Simulator$" manage=off
 
 # System
 yabai -m rule --add app="Activity Monitor$" manage=off
 yabai -m rule --add app="^Systemeinstellungen$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
 
 # Games
 yabai -m rule --add app="Roblox$" manage=off
@@ -57,9 +58,8 @@ yabai -m rule --add app="$ChatGPT" manage=off
 yabai -m config bottom_padding 10
 yabai -m config left_padding   10
 yabai -m config right_padding  10
-yabai -m config top_padding  40
+yabai -m config top_padding  45
 yabai -m config window_gap 12
-yabai -m config active_window_border_color 0xFF0000
 yabai -m config window_shadow float
 yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.4
@@ -67,5 +67,5 @@ yabai -m signal --add event=window_focused action="sketchybar --trigger window_f
 yabai -m signal --add event=window_title_changed action="sketchybar --trigger title_change &> /dev/null"
 
 osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
-borders active_color="gradient(top_right=0xfffe3c3c,bottom_left=0xffad2323)" inactive_color=0xff171515 width=2.0 order=above &
+borders active_color=0xff334761, inactive_color=0xff171515 width=2.0 order=above &
 echo "yabai configuration loaded.."
