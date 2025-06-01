@@ -1,6 +1,6 @@
 local settings = require("settings")
 local cap_monitor = sbar.add("item", {
-  position = "left",
+  position = "right",
   icon = {
     string = "󰦖",
   },

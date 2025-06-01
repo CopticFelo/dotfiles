@@ -1,5 +1,5 @@
 local cpu_util = sbar.add("item", {
-  position = "left",
+  position = "right",
   icon = {
     string = "",
   },

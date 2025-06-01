@@ -1,6 +1,6 @@
 local settings = require("settings")
 local cpu_temp = sbar.add("item", {
-  position = "left",
+  position = "right",
   icon = {
     string = "󰦖",
   },
