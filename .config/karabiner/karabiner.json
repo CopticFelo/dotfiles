@@ -27,15 +27,17 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Caps lock -> esc (in Iterm2 only)",
+                        "description": "Caps lock -> esc (in Neovim only)",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^net\\.kovidgoyal\\.kitty$"
+                                            "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.neovide\\.neovide$"
                                         ],
+                                        "file_paths": ["/Applications/Neovide.app/Contents/MacOS/neovide", "/opt/homebrew/bin/neovide"],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
