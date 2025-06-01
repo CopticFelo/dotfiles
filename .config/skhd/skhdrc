@@ -1,39 +1,39 @@
 # Navigation
-ctrl + alt - left : yabai -m window --focus west
-ctrl + alt - right : yabai -m window --focus east
-ctrl + alt - down : yabai -m window --focus south
-ctrl + alt - up : yabai -m window --focus north
-
-# Moving windows
-ctrl + shift - left : yabai -m window --warp west
-ctrl + shift - right : yabai -m window --warp east
-ctrl + shift - down : yabai -m window --warp south
-ctrl + shift - up : yabai -m window --warp north
+alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
 
 # Resize windows
-ctrl - left : yabai -m window --resize left:-100:0 ; yabai -m window --resize l:-100:0
-ctrl - down : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
-ctrl - up : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
-ctrl - right : yabai -m window --resize right:100:0 ; yabai -m window --resize h:100:0
+ctrl - h : yabai -m window --resize left:-100:0 ; yabai -m window --resize l:-100:0
+ctrl - l : yabai -m window --resize right:100:0 ; yabai -m window --resize h:100:0
+ctrl - j : yabai -m window --resize bottom:0:100 ; yabai -m window --resize top:0:100
+ctrl - k : yabai -m window --resize top:0:-100 ; yabai -m window --resize bottom:0:-100
+
+# Moving windows
+alt + shift - h : yabai -m window --warp west
+alt + shift - l : yabai -m window --warp east
+alt + shift - j : yabai -m window --warp south
+alt + shift - k : yabai -m window --warp north
 
 # Float / Unfloat window
-ctrl - space : yabai -m window --toggle float && yabai -m window --grid 10:10:2:1:6:7
+alt - space : yabai -m window --toggle float && yabai -m window --grid 10:10:2:1:6:7
 
 # Balance the layout
 ctrl - up : yabai -m space --balance
 
 # Make fullscreen
-ctrl - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
 
 # Rotate layout
-ctrl + alt - o : yabai -m space --rotate 90
+ctrl + shift - o : yabai -m space --rotate 90
 
 # Mouse focus
-ctrl - o         : yabai -m config focus_follows_mouse autofocus
-ctrl - p         : yabai -m config focus_follows_mouse off
+alt - o         : yabai -m config focus_follows_mouse autofocus
+alt - p         : yabai -m config focus_follows_mouse off
 
 # Reload yabai
-ctrl + shift - r : yabai --restart-service
+alt + shift - r : yabai --restart-service
 
 # Open finder
 alt - return : osascript -e 'tell application "Finder" to activate' -e 'tell application "System Events" to keystroke "n" using command down'
