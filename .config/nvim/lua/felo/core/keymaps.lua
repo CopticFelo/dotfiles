@@ -14,7 +14,6 @@ vim.keymap.set("n", "<leader>n", ":nohl<CR>", { desc = "clear search highlights"
 
 vim.keymap.set("n", "<leader>c", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree" })
 vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Focus Nvim Tree" })
-vim.keymap.set("n", "<leader>r", ":NvimTreeRefresh<CR>", { desc = "Refresh Nvim Tree" })
 
 vim.keymap.set("n", "<leader>t", "<cmd>tabnew<CR>", { desc = "New tab" })
 vim.keymap.set("n", "<leader>q", "<cmd>tabclose<CR>", { desc = "Close tab" })
@@ -29,7 +28,7 @@ vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { desc = "Find bu
 vim.keymap.set("n", "<leader>v", "<C-w>v", { desc = "Split" })
 vim.keymap.set("n", "<leader>h", "<C-w>s", { desc = "Split horizontally" })
 vim.keymap.set("n", "<leader>x", ":close<CR>", { desc = "Close split" })
-vim.keymap.set("n", "<leader>X", ":bd<CR>", { desc = "Close buffer" })
+vim.keymap.set("n", "<leader>X", "<cmd>bp<bar>sp<bar>bn<bar>bd<CR>", { desc = "Close buffer" })
 
 vim.keymap.set("n", "<TAB>j", "<C-W><C-J>", { desc = "Nav to Bottom split (n)" })
 vim.keymap.set("n", "<TAB>k", "<C-W><C-K>", { desc = "Nav to Upper split (n)" })
@@ -84,6 +83,8 @@ local function change_root_to_global_cwd()
 end
 vim.keymap.set("n", "<leader>O", "<cmd>Telescope workspaces<CR>", { desc = "Change root to cwd" })
 vim.keymap.set("n", "<leader>/", change_root_to_global_cwd, { desc = "Change root to cwd" })
+
+vim.keymap.set("n", "<leader>r", "<cmd>vertical resize 102 | resize 32<CR>", { desc = "Resize current split" })
 
 if vim.g.neovide then
   vim.keymap.set('n', '<D-s>', ':w<CR>')  -- Save

@@ -21,6 +21,7 @@ vim.g.neovide_window_blurred = true
 vim.g.neovide_show_border = false
 vim.g.neovide_cursor_trail_size = 0.0
 vim.o.winborder = "single"
+vim.o.equalalways = false
 
 vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd", "asm_lsp", "basedpyright" })
 vim.diagnostic.config({
