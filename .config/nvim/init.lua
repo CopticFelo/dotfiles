@@ -23,7 +23,7 @@ vim.g.neovide_cursor_trail_size = 0.0
 vim.o.winborder = "single"
 vim.o.equalalways = false
 
-vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd", "asm_lsp", "basedpyright" })
+vim.lsp.enable({ "lua_ls", "rust_analyzer", "clangd", "asm_lsp", "basedpyright", "sourcekit" })
 vim.diagnostic.config({
   virtual_lines = {
     current_line = true,
