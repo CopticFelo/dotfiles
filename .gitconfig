@@ -1,6 +1,6 @@
 [user]
-	name = Felo
-	email = 68559765+Felo1000110@users.noreply.github.com
+	name = CopticFelo
+	email = 68559765+CopticFelo@users.noreply.github.com 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
