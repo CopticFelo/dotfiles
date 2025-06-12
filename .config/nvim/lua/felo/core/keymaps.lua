@@ -84,7 +84,7 @@ end
 vim.keymap.set("n", "<leader>O", "<cmd>Telescope workspaces<CR>", { desc = "Change root to cwd" })
 vim.keymap.set("n", "<leader>/", change_root_to_global_cwd, { desc = "Change root to cwd" })
 
-vim.keymap.set("n", "<leader>r", "<cmd>vertical resize 102 | resize 32<CR>", { desc = "Resize current split" })
+vim.keymap.set("n", "<leader>r", "<cmd>vertical resize 130 | resize 32<CR>", { desc = "Resize current split" })
 
 if vim.g.neovide then
   vim.keymap.set('n', '<D-s>', ':w<CR>')  -- Save
