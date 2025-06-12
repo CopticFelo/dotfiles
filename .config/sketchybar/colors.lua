@@ -3,7 +3,7 @@ return {
   white = 0xffdbdbdb,
   red = 0xff870909,
   green = 0xff1fd41f,
-  blue = 0xff334761,
+  blue = 0xff4d7f86,
   yellow = 0xffecf30c,
   orange = 0xfff3b10c,
   magenta = 0xffb40cf3,
