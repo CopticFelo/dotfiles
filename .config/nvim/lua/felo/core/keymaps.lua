@@ -12,8 +12,8 @@ vim.keymap.set("v", "<leader>s", "yPgv", { desc = "duplicate line down (v)" })
 
 vim.keymap.set("n", "<leader>n", ":nohl<CR>", { desc = "clear search highlights" })
 
-vim.keymap.set("n", "<leader>c", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree" })
-vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Focus Nvim Tree" })
+vim.keymap.set("n", "<leader>c", ":Neotree close<CR>", { desc = "Toggle Nvim Tree" })
+vim.keymap.set("n", "<leader>e", ":Neotree focus<CR>", { desc = "Focus Nvim Tree" })
 
 vim.keymap.set("n", "<leader>t", "<cmd>tabnew<CR>", { desc = "New tab" })
 vim.keymap.set("n", "<leader>q", "<cmd>tabclose<CR>", { desc = "Close tab" })
