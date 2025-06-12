@@ -1,7 +1,8 @@
 -- Left side
 require("plugins.apple")
 -- require("plugins.app_spaces")
-require("plugins.menus")
+-- require("plugins.menus")
+require("plugins.aerospace")
 
 -- Right side
 require("plugins.clock")
