@@ -12,7 +12,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   command = "resize 15",
 })
 
-vim.cmd("colorscheme oxocarbon")
+vim.cmd("colorscheme gabriel")
 vim.o.guifont = "JetbrainsMono Nerd Font:h17"
 vim.g.neovide_opacity = 0.6
 vim.g.neovide_normal_opacity = 0.6

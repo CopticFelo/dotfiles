@@ -1,4 +1,4 @@
 return {
-	"nyoom-engineering/oxocarbon.nvim",
-	lazy = false,
+  "gantoreno/nvim-gabriel",
+  lazy = false,
 }
