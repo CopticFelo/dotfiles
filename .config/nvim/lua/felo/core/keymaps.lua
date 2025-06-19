@@ -56,7 +56,8 @@ vim.keymap.set("n", "<leader><TAB>", "<cmd>tabn<CR>", { desc = "Next tab" })
 vim.keymap.set("n", "<leader>`", "<cmd>w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>~", "<cmd>wa<CR>", { desc = "Save all open buffers" })
 
-vim.keymap.set("n", "<leader>C", "<cmd>CompilerOpen<CR>", { desc = "Open Compiler menu" })
+vim.keymap.set("n", "<F5>", "<cmd>CompilerOpen<CR>", { desc = "Open Compiler menu" })
+vim.keymap.set("i", "<F5>", "<cmd>CompilerOpen<CR>", { desc = "Open Compiler menu" })
 
 vim.keymap.set("i", "<c-h>", "<left>", { desc = "Move left" })
 vim.keymap.set("i", "<c-l>", "<right>", { desc = "Move right" })
