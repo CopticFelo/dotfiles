@@ -31,9 +31,9 @@ vim.opt.wrap = false
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
-vim.cmd("highlight BCursor guifg=NONE guibg=blue guisp=NONE gui=NONE cterm=NONE")
-vim.cmd("highlight RCursor guifg=NONE guibg=red guisp=NONE gui=NONE cterm=NONE")
-vim.opt.guicursor = "n-v-c:block-BCursor,i-ci:block-RCursor-blinkon100"
+vim.cmd("highlight Cursor guifg=NONE guibg=#00D7FF")
+vim.cmd("highlight iCursor guifg=NONE guibg=#FF5F5F")
+vim.opt.guicursor = "n-v-c:block-Cursor,i-ci:block-iCursor"
 vim.opt.title = true
 vim.opt.ttimeoutlen = 0
 vim.opt.wildmenu = true
