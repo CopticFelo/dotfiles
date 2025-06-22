@@ -21,5 +21,6 @@ return {
       selected = colors.red,
       hover = colors.black,
     },
+    border = colors.blue
   },
 }
