@@ -49,8 +49,6 @@ vim.keymap.set("n", "<leader>Fr", "<cmd>FlutterReload<CR>", { desc = "Flutter Re
 vim.keymap.set("n", "<leader>FR", "<cmd>FlutterRestart<CR>", { desc = "Flutter Restart" })
 vim.keymap.set("n", "<leader>Ft", "<cmd>Telescope flutter commands<CR>", { desc = "Flutter commands" })
 
-vim.keymap.set("n", "<TAB>r", ":resize ", { desc = "Resize window command" })
-
 vim.keymap.set("n", "<leader><TAB>", "<cmd>tabn<CR>", { desc = "Next tab" })
 
 vim.keymap.set("n", "<leader>`", "<cmd>w<CR>", { desc = "Save file" })
@@ -85,7 +83,7 @@ end
 vim.keymap.set("n", "<leader>O", "<cmd>Telescope workspaces<CR>", { desc = "Change root to cwd" })
 vim.keymap.set("n", "<leader>/", change_root_to_global_cwd, { desc = "Change root to cwd" })
 
-vim.keymap.set("n", "<leader>r", "<cmd>vertical resize 130 | resize 32<CR>", { desc = "Resize current split" })
+vim.keymap.set("n", "<TAB>r", "<cmd>vertical resize 130 | resize 32<CR>", { desc = "Resize current split" })
 
 if vim.g.neovide then
   vim.keymap.set('n', '<D-s>', ':w<CR>')  -- Save
