@@ -35,7 +35,7 @@ vim.keymap.set("n", "<TAB>k", "<C-W><C-K>", { desc = "Nav to Upper split (n)" })
 vim.keymap.set("n", "<TAB>l", "<C-W><C-L>", { desc = "Nav to Right split (n)" })
 vim.keymap.set("n", "<TAB>h", "<C-W><C-H>", { desc = "Nav to Left split (n)" })
 
-vim.keymap.set("n", "<leader>z", "<C-w>s<cmd>TmuxNavigateDown<CR><cmd>terminal<CR>i", { desc = "Open terminal" })
+vim.keymap.set("n", "<leader>Z", "<C-w>s<cmd>TmuxNavigateDown<CR><cmd>terminal<CR>i", { desc = "Open terminal" })
 
 vim.keymap.set("n", "<leader>]", ":CompetiTest run<CR>", { desc = "Run testcases" })
 vim.keymap.set("n", "<leader>a", ":CompetiTest add_testcase<CR>", { desc = "Add testcase" })
