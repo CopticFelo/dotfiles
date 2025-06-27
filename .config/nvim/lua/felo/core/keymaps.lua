@@ -37,11 +37,11 @@ vim.keymap.set("n", "<TAB>h", "<C-W><C-H>", { desc = "Nav to Left split (n)" })
 
 vim.keymap.set("n", "<leader>Z", "<C-w>s<cmd>TmuxNavigateDown<CR><cmd>terminal<CR>i", { desc = "Open terminal" })
 
-vim.keymap.set("n", "<leader>]", ":CompetiTest run<CR>", { desc = "Run testcases" })
-vim.keymap.set("n", "<leader>a", ":CompetiTest add_testcase<CR>", { desc = "Add testcase" })
-vim.keymap.set("n", "<leader>m", ":CompetiTest edit_testcase<CR>", { desc = "Edit testcase" })
-vim.keymap.set("n", "<leader>d", ":CompetiTest delete_testcase<CR>", { desc = "Delete testcase" })
-vim.keymap.set("n", "<leader>g", ":CompetiTest receive testcases<CR>", { desc = "Get testcases" })
+vim.keymap.set("n", "<leader>Cr", ":CompetiTest run<CR>", { desc = "Run testcases" })
+vim.keymap.set("n", "<leader>Ca", ":CompetiTest add_testcase<CR>", { desc = "Add testcase" })
+vim.keymap.set("n", "<leader>Ce", ":CompetiTest edit_testcase<CR>", { desc = "Edit testcase" })
+vim.keymap.set("n", "<leader>Cd", ":CompetiTest delete_testcase<CR>", { desc = "Delete testcase" })
+vim.keymap.set("n", "<leader>Cg", ":CompetiTest receive testcases<CR>", { desc = "Get testcases" })
 
 vim.keymap.set("n", "<leader>Fd", "<cmd>FlutterRun<CR>", { desc = "Flutter Run (Debug)" })
 vim.keymap.set("n", "<leader>Fq", "<cmd>FlutterQuit<CR>", { desc = "Flutter Quit" })
