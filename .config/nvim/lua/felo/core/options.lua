@@ -35,7 +35,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- LSP
-vim.lsp.enable({ "lua_ls", "asm_lsp", "basedpyright", "sourcekit" })
+vim.lsp.enable("sourcekit")
 vim.diagnostic.config({
   virtual_lines = {
     current_line = true,
