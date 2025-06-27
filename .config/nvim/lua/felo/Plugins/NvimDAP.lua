@@ -7,7 +7,7 @@ return {
       host = "127.0.0.1",
       port = 13000,
       executable = {
-        command = vim.fn.exepath("codelldb"),
+        command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb",
         args = { "--port", 13000 },
       },
     }
