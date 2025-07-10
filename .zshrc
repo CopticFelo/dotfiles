@@ -138,11 +138,13 @@ unset __conda_setup
 
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 export ANDROID_SDK_ROOT=/opt/homebrew/share/android-commandlinetools
+export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 # export PATH="/opt/homebrew/opt/openjdk:$PATH"
 # export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/share/android-commandlinetools/emulator/:$PATH"
 export PATH="~/go/bin:$PATH"
+# export PATH="/Users/felo/.local/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export HOMEBREW_NO_AUTO_UPDATE=1
