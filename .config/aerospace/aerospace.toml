@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
- 'exec-and-forget borders active_color=0xff4d7f86, inactive_color=0xff171515 width=2.0 order=above'
+ 'exec-and-forget borders active_color=0xff573232, inactive_color=0xff171515 width=2.0 order=above'
  ]
 
 
@@ -184,7 +184,6 @@ automatically-unhide-macos-hidden-apps = true
 [[on-window-detected]]
   if.app-id = "com.apple.finder"
   run = 'layout floating'
-#
 # [[on-window-detected]]
 #   if.app-id = "com.gaijinent.WarThunderDL"
 #   run = 'layout floating'

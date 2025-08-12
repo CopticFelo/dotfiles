@@ -3,16 +3,16 @@ return {
   font = "Arimo Nerd Font",
   paddings = {
     inner = 7,
-    outer = 5,
+    outer = 10,
     item_padding = 6
   },
   default_colors = {
     hover = colors.white,
     icons = {
-      idle = colors.blue,
-      warn = colors.blue,
+      idle = colors.red,
+      warn = colors.red,
       critical = colors.red,
-      selected = colors.blue,
+      selected = colors.red,
       hover = colors.black,
     },
     text = {
@@ -21,6 +21,6 @@ return {
       selected = colors.red,
       hover = colors.black,
     },
-    border = colors.blue
+    border = colors.red
   },
 }

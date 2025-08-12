@@ -78,6 +78,9 @@ sbar.exec("aerospace list-workspaces --focused", function(result)
         local space_padding = sbar.add("item", "space.padding." .. space_name, {
           script = "",
           width = settings.paddings.inner,
+          background = {
+            drawing = false
+          }
         })
 
         space:subscribe("aerospace_workspace_change", function(env)
