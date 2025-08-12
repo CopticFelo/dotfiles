@@ -8,15 +8,20 @@ function Update_windows(space, space_name)
   sbar.exec("aerospace list-windows --format %{app-name} --workspace " .. space_name, function(windows)
     print(windows)
     local no_app = true
-    local icon_line = ""
+    local icon_line = {
+      string = "",
+      drawing = true,
+    }
     for app in windows:gmatch("[^\r\n]+") do
       no_app = false
+      icon_line.drawing = true
       local lookup = app_icons[app]
       local icon = ((lookup == nil) and app_icons["Default"] or lookup)
-      icon_line = icon_line .. " " .. icon
+      icon_line.string = icon_line.string .. " " .. icon
     end
     if no_app then
-      icon_line = " —"
+      icon_line.string = ""
+      icon_line.drawing = false
     end
     sbar.animate("tanh", 10, function()
       space:set({ label = icon_line })
@@ -48,8 +53,8 @@ sbar.exec("aerospace list-workspaces --focused", function(result)
         local space = sbar.add("item", "space." .. space_name, {
           icon = {
             string = space_name,
-            padding_left = 7,
-            padding_right = 3,
+            padding_left = settings.paddings.outer,
+            padding_right = settings.paddings.inner,
             color = settings.default_colors.text.idle,
             highlight_color = settings.default_colors.icons.selected,
           },
