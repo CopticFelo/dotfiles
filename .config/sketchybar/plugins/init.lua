@@ -11,9 +11,9 @@ require("plugins.wifi")
 -- require("plugins.netstat")
 -- require("plugins.outdated")
 require("plugins.disk_capacity")
-require("plugins.cpu")
+-- require("plugins.cpu")
 require("plugins.cpu_temp")
-require("plugins.weather")
+-- require("plugins.weather")
 
 -- Center
 require("plugins.front_app")
