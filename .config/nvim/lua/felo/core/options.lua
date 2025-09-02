@@ -5,7 +5,7 @@ vim.o.winborder = "single"
 vim.opt.title = true
 vim.opt.ttimeoutlen = 0
 vim.opt.wildmenu = true
-vim.o.guifont = "JetbrainsMono Nerd Font:h17"
+vim.o.guifont = "Arimo Nerd Font:h17"
 vim.cmd("colorscheme gabriel")
 vim.opt.guicursor = "n-v-c:block-Cursor,i-ci:block-iCursor"
 
