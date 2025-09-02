@@ -15,3 +15,11 @@ vim.keymap.set(
   end,
   { silent = true, buffer = bufnr }
 )
+vim.keymap.set(
+  "n",
+  "<F1>",
+  function()
+    vim.cmd.RustLsp('debuggables')
+  end,
+  { silent = true, buffer = bufnr }
+)
