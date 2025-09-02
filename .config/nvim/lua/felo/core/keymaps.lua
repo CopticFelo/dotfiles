@@ -62,6 +62,7 @@ vim.keymap.set("i", "<c-k>", "<up>", { noremap = true, desc = "Move up" })
 -- LSP
 vim.keymap.set("n", "<leader>A", "<Cmd>lua vim.lsp.buf.code_action()<CR>", { desc = "Code actions" })
 vim.keymap.set("n", "<leader>R", "<Cmd>lua vim.lsp.buf.rename()<CR>", { desc = "Rename Symbol" })
+vim.keymap.set("n", "<leader>d", "<Cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Show line errors" })
 vim.keymap.set("n", "<leader>D", "<Cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Jump to definition" })
 
 -- Running and Debugging (language specific)
