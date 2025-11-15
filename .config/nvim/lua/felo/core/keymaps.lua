@@ -15,7 +15,7 @@ vim.keymap.set("n", "<leader>n", "<Cmd>nohl<CR>", { desc = "clear search highlig
 vim.keymap.set("n", "<leader>c", "<Cmd>Neotree close<CR>", { desc = "Toggle Nvim Tree" })
 vim.keymap.set("n", "<leader>e", "<Cmd>Neotree focus<CR>", { desc = "Focus Nvim Tree" })
 
-vim.keymap.set("n", "<leader>t", "<Cmd>tabnew<CR>", { desc = "New tab" })
+vim.keymap.set("n", "<leader>T", "<Cmd>tabnew<CR>", { desc = "New tab" })
 vim.keymap.set("n", "<leader>q", "<Cmd>tabclose<CR>", { desc = "Close tab" })
 vim.keymap.set("n", "<leader>,", "<Cmd>bprev<CR>", { desc = "Prev buffer" })
 vim.keymap.set("n", "<leader>.", "<Cmd>bnext<CR>", { desc = "Next buffer" })
@@ -73,6 +73,17 @@ vim.keymap.set("n", "<F11>", "<Cmd>DapStepInto<CR>", { desc = "Step into" })
 vim.keymap.set("n", "<F12>", "<Cmd>DapStepOut<CR>", { desc = "Step out" })
 vim.keymap.set("n", "<F5>", "<Cmd>DapContinue<CR>", { desc = "Debug/Continue" })
 vim.keymap.set("n", "<F6>", "<Cmd>DapTerminate<CR>", { desc = "Stop debugging" })
+
+-- Neotest
+vim.keymap.set("n", "<leader>tt", function()
+  require("neotest").run.run({ suite = true })
+end, { desc = "Start test" })
+vim.keymap.set("n", "<leader>ts", function()
+  require("neotest").summary.toggle()
+end, { desc = "Toggle summary panel" })
+vim.keymap.set("n", "<leader>to", function()
+  require("neotest").output_panel.toggle()
+end, { desc = "Toggle output panel" })
 
 local function change_root_to_global_cwd()
   local api = require("nvim-tree.api")
