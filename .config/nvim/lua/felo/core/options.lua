@@ -23,6 +23,12 @@ vim.opt.relativenumber = true
 -- Split Windows
 vim.opt.splitright = true
 vim.o.equalalways = false
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "help",
+  callback = function()
+    vim.cmd("wincmd L")
+  end,
+})
 
 -- Tab Settings
 vim.opt.expandtab = true
