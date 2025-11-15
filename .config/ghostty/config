@@ -1,5 +1,6 @@
-font-family=FiraCode Nerd Font Mono Bold
-font-size=18
+font-family="FiraCode Nerd Font Mono"
+font-size=20
+background-opacity=0.6
 theme=Adventure
 window-decoration=client
 macos-titlebar-style=tabs
