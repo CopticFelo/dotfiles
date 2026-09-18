@@ -1,0 +1,62 @@
+[options]
+focus_follows_mouse = false
+mouse_follows_focus = false
+animation_speed = 50
+mouse_resize_modifier = "cmd + shift"
+preset_column_widths = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+menubar_height = 30
+
+[swipe.gesture]
+fingers_count = 3
+vertical = true
+
+[bindings]
+window_focus_west = "alt - h"
+window_focus_east = "alt - l"
+window_grow = "alt - ="
+window_shrink = "alt - minus"
+window_fullwidth = "alt - f"
+window_center = "alt - c"
+window_manage = "alt - space"
+window_unstack = "alt - u"
+window_stack = "alt - s"
+window_raise_floating = "alt + shift - s"
+window_swap_west = "alt + shift - h"
+window_swap_east = "alt + shift - l"
+quit = "ctrl + alt - q"
+window_virtualnum_1 = "alt - 1"
+window_virtualnum_2 = "alt - 2"
+window_virtualnum_3 = "alt - 3"
+window_virtualnum_4 = "alt - 4"
+window_virtualnum_5 = "alt - 5"
+window_virtualnum_6 = "alt - 6"
+window_virtualmovenum_1 = "alt + shift - 1"
+window_virtualmovenum_2 = "alt + shift - 2"
+window_virtualmovenum_3 = "alt + shift - 3"
+window_virtualmovenum_4 = "alt + shift - 4"
+window_virtualmovenum_5 = "alt + shift - 5"
+window_virtualmovenum_6 = "alt + shift - 6"
+
+[padding]
+left = 1
+right = 1
+top = 5
+
+[decorations.active.border]
+enabled = false
+color = "#75fb4c"
+width = 2.0
+radius = 12.0
+
+[decorations.inactive.dim]
+opacity = -0.15
+
+[windows.all]
+title = ".*"
+vertical_padding = 6
+horizontal_padding = 6
+
+# [windows.zulu_java]
+# title = "*"
+# bundle_id = "com.azul.zulu.java"
+# floating = true

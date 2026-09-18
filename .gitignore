@@ -1,0 +1,17 @@
+.config/gh/
+.config/flutter/
+.config/htop/
+.config/.mono/
+.config/iterm2/
+.config/jgit/
+.config/neofetch/
+.config/raycast/
+.config/StardewValley/
+.config/taskell/
+.config/wireshark/
+.config/karabiner/automatic_backups/
+.config/nvim/lazy-lock.json
+.config/sketchybar/scripts/get_weather_location.sh
+.config/kitty/kitty.conf.bak
+.config/github-copilot/
+.DS_store
