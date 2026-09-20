@@ -59,6 +59,7 @@ in
     librewolf
     utm
     ani-cli-fix
+    nmap
   ];
 
   programs.zsh = {
