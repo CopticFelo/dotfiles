@@ -15,7 +15,7 @@ local colors = {
 }
 
 return {
-  font = "Arimo Nerd Font",
+  font = "AurulentSansM Nerd Font",
   paddings = {
     inner = 7,
     outer = 10,

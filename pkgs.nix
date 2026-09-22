@@ -53,6 +53,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.arimo
     nerd-fonts.fira-mono
+    nerd-fonts.aurulent-sans-mono
   ];
 
 }

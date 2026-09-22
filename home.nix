@@ -89,7 +89,7 @@ in
     # pkgs.ghostty is currently broken on MacOS, so getting it from brew casks instead
     package = null;
     settings = {
-      font-family = "FiraCode Nerd Font Mono";
+      font-family = "AurulentSansM Nerd Font";
       font-size = 20;
       background-opacity = 0.9;
       theme = "Adventure";
