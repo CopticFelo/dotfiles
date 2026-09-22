@@ -8,6 +8,10 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     home-manager.url = "github:nix-community/home-manager";
+    paneru = {
+      url = "github:karinushka/paneru";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
       flake = false;
@@ -40,6 +44,7 @@
       home-manager,
       homebrew-core,
       homebrew-cask,
+      paneru,
       acsandmann-tap,
       felixkratz-tap,
       artginzburg-tap,

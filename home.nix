@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 let
   ani-cli-fix = pkgs.ani-cli.overrideAttrs (
     finalAttrs: previousAttrs: {
@@ -13,6 +18,9 @@ let
   );
 in
 {
+  imports = [
+    inputs.paneru.homeModules.paneru
+  ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "felo";
@@ -61,6 +69,8 @@ in
     ani-cli-fix
     nmap
   ];
+
+  services.paneru.enable = true;
 
   programs.zsh = {
     enable = true;
