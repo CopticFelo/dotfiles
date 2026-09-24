@@ -68,6 +68,7 @@ in
     utm
     ani-cli-fix
     nmap
+    easyrpg-player
   ];
 
   services.paneru = {
