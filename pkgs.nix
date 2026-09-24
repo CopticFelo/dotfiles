@@ -18,6 +18,9 @@
 
   homebrew = {
     enable = true;
+    onActivation = {
+      upgrade = true;
+    };
     casks = [
       "ghostty"
       "zen"
