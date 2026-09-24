@@ -30,4 +30,7 @@
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "aarch64-darwin";
+
+  # cmd + ctrl to move windows
+  system.defaults.NSGlobalDomain.NSWindowShouldDragOnGesture = true;
 }
