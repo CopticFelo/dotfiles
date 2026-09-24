@@ -70,7 +70,10 @@ in
     nmap
   ];
 
-  services.paneru.enable = true;
+  services.paneru = {
+    enable = true;
+    luaConfig.enable = true;
+  };
 
   programs.zsh = {
     enable = true;
